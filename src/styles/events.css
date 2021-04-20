@@ -1,0 +1,64 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff5e59;
+    border-radius: 6px;
+}
+
+
+.body-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.css-1uqnjl3-Calendar {
+    border-left: 20px solid #0c446c !important;
+    border-bottom: 20px solid #0c446c !important;
+    border-width: 25px;
+    border-color: #0c446c;
+    width: 75%;
+    font-family: sans-serif;
+    background-color: rgba(209, 209, 209, 0.616);
+}
+.App {
+    max-width: 25%;
+    background-color: #0c446c;
+    display: flex;
+    justify-content: center;
+    border-bottom: 20px solid #0c446c;
+}
+.makeStyles-root-5{
+    padding-bottom: 10px;
+    width: 100% !important;
+}
+
+.makeStyles-root-5 h5 {
+    color: red;
+}
+
+
+.App .card1 {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+.App .card1 .title {
+    color: black;
+    font-weight: 500;
+    font-size: 25px !important;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 0 50px;
+
+}
+
+.App .card1 .date {
+    text-align: center;
+}
+

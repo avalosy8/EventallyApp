@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "eventallyappb7d5111f": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

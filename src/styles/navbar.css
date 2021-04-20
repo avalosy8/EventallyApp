@@ -1,0 +1,45 @@
+.navbar .logo {
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.navbar .logo img {
+  transform: scale(0.6);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-radius: 4px; */
+  background-color: #0c446c;
+  height: 100px;
+}
+
+.navbar__link {
+  justify-content: right;
+  margin: 1em;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  text-indent: 0.3em;
+  color: #ffffff;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar__link:hover {
+  transform: scale(1.1);
+}
+
+.navbar__link--active {
+  border-bottom: 3px solid #ff5e59;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+.logout {
+  padding-right: 20px;
+}

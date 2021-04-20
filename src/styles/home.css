@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap");
+
+.Main {
+  /* background-color: #0B427A; */
+  background-color: white;
+  width: auto;
+  height: 90vh;
+  padding-top: 50px;
+  background-color: #0c446c;
+}
+
+.body-left {
+  width: 60%;
+  display: flex;
+  justify-content: right;
+}
+
+.body-right {
+  width: 40%;
+  padding: 0 50px;
+  margin-top: -20px;
+  color: white;
+}
+
+.body-right h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 72px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 75px;
+}
+
+.body-right h2 span {
+  color: #ff5e59;
+}
+
+.body-right p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  margin-bottom: 50px;
+  line-height: 2;
+}
+
+.body-right p span {
+  text-decoration: underline;
+  text-decoration-color: #ff5e59;
+  text-decoration-thickness: 3px;
+}
+
+.slider {
+  /* width: 800px; */
+  width: 90%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  /* width: 800px; */
+  width: 100%;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #ff5e59;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #ff5e59;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #ff5e59;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #ff5e59;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #ff5e59;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #ff5e59;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff5e59;
+  border-radius: 6px;
+}
+
+.pointsbox {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+}
+
+.pointsbox h3 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.pointsbox h3 span {
+  font-size: 36px;
+  font-size: 72px;
+  line-height: 50px;
+  color: #ff5e59;
+}
+
+.pointsbox label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.pointsbox input[type="text"] {
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 10px 20px;
+  text-align: center;
+  color: black;
+}
+
+.pointsbox input[type="submit"] {
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 10px 20px;
+  text-align: center;
+  padding: 5px;
+  background-color: #ff5e59;
+  color: white;
+}

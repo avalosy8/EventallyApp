@@ -75,6 +75,9 @@ function EventsListing(){
 
     // when clicked, show events
     useEffect(() => {
+        if(click == 0) {
+          return;
+        }
         function start() {
             gapi.client.init({
                 apiKey: API_KEY,
@@ -94,7 +97,7 @@ function EventsListing(){
 
         }      
       gapi.load('client', start)   
-    }, [])
+    }, [click])
 
     console.log('C_EVENTS: ', calendarEvents)
 
@@ -105,6 +108,8 @@ function EventsListing(){
     return (
         <div className="App">
         <header className="App-header">
+
+        <button style={{width: 100, height: 50}} onClick={e => setClick(click+1)}>Get Events</button>
 
             {calendarEvents.events && <div>
                 {calendarEvents.events.map((ev,key) => {

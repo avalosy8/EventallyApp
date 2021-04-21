@@ -1,10 +1,11 @@
 # Eventally App
 
-This project was created for an organization called WECE (Women of Electrical and Computer Engineering).
+This is Team Appa's final project for CEN3031 Intro to Software Engineering. Our client was an engineering organization called WECE (Women of Electrical and Computer Engineering).
+This github repo contains the final code for this project, all old code and branches are located in this repo: https://github.com/avalosy8/SWE-Project
 
 ## Running the App Locally
 
-Inside the project directory, run the following commands:
+After downloading/cloning our project, navigate to the project directory and run the following commands:
 
 ### `npm i`
 ### `npm start`
